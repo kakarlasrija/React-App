@@ -1,0 +1,7 @@
+.TstBdy {
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}

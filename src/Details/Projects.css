@@ -1,0 +1,7 @@
+.PrjBdy {
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+}

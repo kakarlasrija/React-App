@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+}
+
+.nav__brand {
+  text-transform: capitalize;
+  text-shadow: 2rem;
+  font-family: Pacifico;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(117, 116, 116);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 8.5vh;
+    right: 0;
+    height: 40vh;
+    width: 70vw;
+    background: rgb(48, 216, 250);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(158, 234, 250);
+  background: linear-gradient(
+    0deg,
+    rgba(158, 234, 250, 1) 0%,
+    rgba(78, 221, 251, 1) 59%,
+    rgba(78, 221, 251, 1) 79%,
+    rgba(78, 221, 251, 1) 100%
+  );
+}
+
+.NavBdy {
+  top: 0px;
+  width: 100%;
+  min-height: 98vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background: rgb(201, 254, 254);
+  background: linear-gradient(
+    35deg,
+    rgba(201, 254, 254, 1) 0%,
+    rgba(37, 204, 211, 1) 27%,
+    rgba(69, 210, 246, 1) 48%,
+    rgba(29, 245, 250, 1) 48%,
+    rgba(50, 196, 245, 1) 100%
+  );
+}

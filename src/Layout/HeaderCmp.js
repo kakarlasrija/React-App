@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+import Mypic from "../StaticFiles/Images/Srija.png";
 import "./HeaderCmp.css";
+import { Typewriter } from "react-simple-typewriter";
 
 function HeaderCmp() {
   const [active, setActive] = useState("nav__menu");
@@ -59,7 +60,38 @@ function HeaderCmp() {
           <div className="line3"></div>
         </div>
       </nav>
-      <div className="NavBdy"></div>
+      <div className="NavBdy">
+        <div className="Frame1">
+          <div className="Intro">
+            <h3>WELCOME TO MY WORLD</h3>
+            <h1>
+              Hi, I’m <span>Srija Tanniru</span>
+            </h1>
+            <h2>
+              a
+              <span>
+                <Typewriter
+                  words={[
+                    " Java Developer.",
+                    " React Developer.",
+                    " Full Stack Developer.",
+                  ]}
+                  loop
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </h2>
+          </div>
+        </div>
+
+        <div className="Frame2">
+          <img src={Mypic} alt="MyPic"></img>
+        </div>
+      </div>
     </>
   );
 }

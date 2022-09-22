@@ -1,7 +1,35 @@
 .PrjBdy {
-  color: whitesmoke;
+  color: rgb(12, 12, 12);
   text-align: center;
   width: 100%;
   height: 95vh;
-  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card {
+  width: 12%;
+  height: 40%;
+  border: 1px solid;
+  border-radius: 8%;
+}
+
+.card img {
+  border-radius: 10%;
+  height: 60%;
+  width: 100%;
+}
+
+.card button {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
 }

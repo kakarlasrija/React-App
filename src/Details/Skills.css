@@ -1,7 +1,289 @@
 .SkillsBdy {
-  color: whitesmoke;
   text-align: center;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+.SkillHeading {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+}
+
+.SkillHeading .head {
+  box-shadow: rgb(250, 249, 249) 0px 4px 12px;
+  border-radius: 20px;
+  width: 400px;
+  max-width: 800px;
+  margin-top: 10%;
+  /* height: fit-content; */
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+.SkillHeading .head h1 {
+  color: white;
+  margin: auto;
+}
+/* .PortfolioSkill {
   width: 100%;
-  height: 95vh;
-  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  height: 100%;
+} */
+.SkillsList {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1.8rem;
+  width: 65%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skills1 div {
+  color: white;
+  border-radius: 20px;
+  width: 220px;
+  padding: 10px;
+  background: rgb(0, 236, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 236, 255, 1) 0%,
+    rgba(241, 196, 255, 1) 100%
+  );
+}
+
+.Skills2 div {
+  color: white;
+  border-radius: 20px;
+  width: 220px;
+  padding: 10px;
+  background: rgb(0, 236, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 236, 255, 1) 0%,
+    rgba(241, 196, 255, 1) 100%
+  );
+}
+
+.Skills3 div {
+  color: white;
+  border-radius: 20px;
+  width: 220px;
+  padding: 10px;
+  background: rgb(0, 236, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 236, 255, 1) 0%,
+    rgba(241, 196, 255, 1) 100%
+  );
+}
+
+@media only screen and (min-width: 320px) {
+  .SkillsList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .Skills1 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .SkillsList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+  .Skills1 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 571px) {
+  .SkillsList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+  .Skills1 div {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 572px) {
+  .SkillHeading .head {
+    margin-top: 10%;
+  }
+  .SkillsList {
+    display: flex;
+    flex-direction: row;
+  }
+  .Skills1 div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .SkillHeading .head {
+    margin-top: 10%;
+  }
+  .SkillsList {
+    display: flex;
+    flex-direction: row;
+  }
+  .Skills1 div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .SkillHeading .head {
+    margin-top: 10%;
+  }
+  .SkillsList {
+    display: flex;
+    flex-direction: row;
+  }
+  .Skills1 div {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills2 div {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+  .Skills3 div {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .SkillHeading .head {
+    margin-top: 10%;
+  }
+  .SkillsList {
+    display: flex;
+    flex-direction: row;
+  }
+  .Skills1 div {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .Skills2 div {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .Skills3 div {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
 }

@@ -3,7 +3,7 @@ import "./Skills.css";
 function Skills() {
   return (
     <>
-      <div className="SkillsBdy">
+      <section className="SkillsBdy" id="Skills">
         <section className="PortfolioSkill" id="skill">
           <div className="SkillHeading">
             <div className="head">
@@ -50,7 +50,7 @@ function Skills() {
                 <h3>Spring Data Jpa</h3>
               </div>
               <div>
-                <h3>MySQL Server</h3>
+                <h3>SQL Server</h3>
               </div>
             </div>
             <div className="Skills3">
@@ -75,7 +75,7 @@ function Skills() {
             </div>
           </div>
         </section>
-      </div>
+      </section>
     </>
   );
 }
